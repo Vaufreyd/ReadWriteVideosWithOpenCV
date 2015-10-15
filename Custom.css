@@ -1,0 +1,6 @@
+div.textblock
+{
+	text-align: justify;
+    	text-justify: inter-word;
+	max-width: 1200px;
+}

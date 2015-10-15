@@ -1,0 +1,3 @@
+[submodule "DataManagement"]
+	path = DataManagement
+	url = https://github.com/Vaufreyd/DataManagement.git
