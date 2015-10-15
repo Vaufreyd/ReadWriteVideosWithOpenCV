@@ -23,8 +23,6 @@ int main( int argc, char *argv[] )
 	// Set the VideoIn *only* in debug mode (trace will be show);
 	VideoIn.DebugMode = true;
 
-	fprintf( stderr,  )
-
 	// Open the video file
 	if ( VideoIn.Open( "big-buck-bunny_trailer.webm" ) == false )
 	{
