@@ -5,9 +5,12 @@ with [OpenCV](http://opencv.org/). The idea is to use [ffmpeg](https://www.ffmpe
 to/from [OpenCV](http://opencv.org/) cv::Mat objects under Windows/Linux/Mac OSX. Efficiency is not the goal here, we want to share
 our Swiss knife to facilitate video manipulation as you may have encounter problems to do so.
 
+### Benefits
+
 Using this code you will be able, even under Windows (the poor sibling of [OpenCV](http://opencv.org/) on this task),
-to read and to generate various types of videos. If [ffmpeg](https://www.ffmpeg.org/) can read it, you can read it. If 
-[ffmpeg](https://www.ffmpeg.org/) can write it, you can write it setting your own codec parameters if your want.
+to read and to generate various types of videos :
++ We encoutered problems when reading some videos with OpenCV alone, this code solve them 
++ While OpenCV let you define size and frame rate of the video, here, you can precisely define all kind of parameters for reading or writing videos: codecs, quality, bandwith, size, pixel format, etc.
 
 ## RGBD Sync SDK
 
