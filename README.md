@@ -11,11 +11,11 @@ to read and to generate various types of videos. If [ffmpeg](https://www.ffmpeg.
 
 ## RGBD Sync SDK
 
-This project and the DataManagement repository are subparts of the RGBD Sync SDK. 
+This project and the DataManagement repository are subparts of the [RGBD Sync SDK](https://github.com/Vaufreyd/RGBDSyncSDK). 
 This SDK is design for file access to data (robot information, depth, infrared, video, bodies and faces from a Kinect2, ...) and easy way to read them synchronously
 from separate sources almost like in ROS bag. 
 
-The RGBD Sync SDK has been use to record the [MobileRGBD corpus](http://MobileRGBD.inrialpes.fr/). It is available for people who want
+The [RGBD Sync SDK](https://github.com/Vaufreyd/RGBDSyncSDK) has been use to record the [MobileRGBD corpus](http://MobileRGBD.inrialpes.fr/). It is available for people who want
 to work on this corpus, and anyone who need to use it within the term of the LICENSE.
 
 ## Building the example
