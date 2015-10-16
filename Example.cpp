@@ -1,5 +1,5 @@
 /**
- * @file Main.cpp
+ * @file Example.cpp
  * @ingroup ReadWriteOpenCVMovies
  * @author Dominique Vaufreydaz, Grenoble Alpes University, Inria
  * @copyright All right reserved.
