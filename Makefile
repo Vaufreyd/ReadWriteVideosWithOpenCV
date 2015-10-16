@@ -5,18 +5,18 @@ CXXFLAGS= -g `pkg-config --cflags opencv` # -std=c++11
 LDFLAGS = `pkg-config --libs opencv`
 
 # objects to compile
-OBJS = DataManagement/VideoIO.cpp DataManagement/Pipe.cpp
+OBJS = DataManagement/VideoIO.o DataManagement/Pipe.o
 
 # Root rule
 all: Makefile Test
 
 # Build test program
 Test: $(OBJS) Example.o 
-	${CXX} ${CXXFLAGS} ${CPPFLAGS} -o $@ $(OBJS) Example.o $(LDFLAGS)
+	${CXX} $(OBJS) Example.o -o $@  $(LDFLAGS)
 
 # Rule to build all .o 
 %.o: %.cpp %.h
-	${CXX} -MM -c ${CXXFLAGS} ${CPPFLAGS} -o $@ $<
+	${CXX} -c -g ${CXXFLAGS} ${CPPFLAGS} -o $@ $<
 
 # cleaning rule
 clean:
