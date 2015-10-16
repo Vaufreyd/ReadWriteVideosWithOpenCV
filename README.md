@@ -25,6 +25,10 @@ to work on this corpus, and anyone who need to use it within the term of the LIC
 
 ### Requirements
 
+First, as we used submodules in our project, in order to clone this repo, you must ask git to work recursively:
+
+    $> git clone --recursive https://github.com/Vaufreyd/ReadWriteMoviesWithOpenCV.git
+    
 Using file reading and synchronization does not involve using specific things except a C++ compiler (g++, Visual Studio, etc.).
 Some steps are mandatory to use the VideoIO class:
 * First, you **DO NOT** need to recompile OpenCV to support specific codecs. You just need to install it. This source code
