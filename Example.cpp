@@ -45,7 +45,7 @@ int main( int argc, char *argv[] )
 			// Change size (width sets artificially to 1.5*original) of the output to test if auto rescaling is working
 			// "-y" => force overwrite of output file
 			// "-codec:v libx264 -profile:v high -preset slow -b:v 500k -maxrate 500k -bufsize 1000k -threads 0 -pix_fmt yuv420p" => mp4 codec parameters
-			VideoOut.Create( "Result.mp4", VideoIn.Width*1.5, VideoIn.Height*1.5, VideoIn.Fps,
+			VideoOut.Create( "Result.mp4", (int)(VideoIn.Width*1.5), (int)(VideoIn.Height*1.5), VideoIn.Fps,
 				"-y -codec:v libx264 -profile:v high -preset slow -b:v 500k -maxrate 500k -bufsize 1000k -threads 0 -pix_fmt yuv420p" );
 		}
 

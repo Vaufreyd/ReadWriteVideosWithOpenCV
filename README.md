@@ -1,4 +1,4 @@
-# Read Write Movies With OpenCV Documentation
+# Read Write Movies With OpenCV
 
 This aim of this project is to provide a convenient way to read and write almost any kind of video
 with [OpenCV](http://opencv.org/). The idea is to use [ffmpeg](https://www.ffmpeg.org/) as a pipe tool to read and write videos (sound is not supported)
@@ -11,6 +11,7 @@ Using this code you will be able, even under Windows (the poor sibling of [OpenC
 to read and to generate various types of videos :
 + We encoutered problems when reading some videos with OpenCV alone, this code solve them 
 + While OpenCV let you define size and frame rate of the video, here, you can precisely define all kind of parameters for reading or writing videos: codecs, quality, bandwith, size, pixel format, etc.
++ You can do the same with your webcam as input (see Webcam.md)
 
 ## RGBD Sync SDK
 
@@ -33,7 +34,8 @@ Using file reading and synchronization does not involve using specific things ex
 Some steps are mandatory to use the VideoIO class:
 * First, you **DO NOT** need to recompile OpenCV to support specific codecs. You just need to install it. This source code
 was tested with OpenCV 2.4.10 (Linux/Windows/Mac OSX) and 3.0.0 (on Windows only for this last version.)
-* You must install [ffmpeg](https://www.ffmpeg.org/) to your computer in a way you can call `ffprobe` and `ffmpeg`.
+* You must install [ffmpeg](https://www.ffmpeg.org/) version 2.4.7 (or later) to your computer in a way you can call `ffprobe` and `ffmpeg`.
+For older version, please read KnownIssues.md.
 In a command shell (even in the standard cmd.exe shell on Windows), you can test `ffprobe` and `ffmpeg` to see if it is working.
 
     $> ffprobe --version
@@ -74,6 +76,7 @@ in the ReadWriteMoviesWithOpenCV.
 The test program processes the "big-buck-bunny_trailer.webm" video file (see [Big Buck Bunny licensing below](#BigBunnyLicensing)) from
 the ReadWriteMoviesWithOpenCV folder. On Windows, you can use the Visual Studio environment or launch the Test program in the cmd.exe shell.
 In other environments, you can test the program in a graphical environment:
+
     $> ./Test
 
 The program opens the "big-buck-bunny_trailer.webm" video, write a new mp4 video changing size to a larger version (1.5 times the original size). The video is
@@ -99,7 +102,7 @@ RGBD Sync SDK and submodules are free software; you can redistribute and/or modi
 [Consult the license on the FSF website](http://www.gnu.org/licenses/lgpl-3.0.txt).
 
 If you are a researcher and this software helps you, please cite our publication on MobileRGBD:  
-*MobileRGBD, An Open Benchmark Corpus for mobile RGB-D Related Algorithms*, Dominique Vaufreydaz, Amaury N&egrave;gre,
++ *MobileRGBD, An Open Benchmark Corpus for mobile RGB-D Related Algorithms*, Dominique Vaufreydaz, Amaury N&egrave;gre,
 13th International Conference on Control, Automation, Robotics and Vision, Dec 2014, Singapore, 2014. [(go to author version)](https://hal.inria.fr/hal-01095667)
 
 Copyright (c) 2015, University of Grenoble Alpes and Inria, All rights reserved.

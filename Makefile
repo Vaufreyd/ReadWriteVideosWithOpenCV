@@ -1,7 +1,7 @@
 # -*- Makefile -*-
 
 # You may add -std=c++11
-CXXFLAGS= -g `pkg-config --cflags opencv` # -std=c++11
+CXXFLAGS= -g `pkg-config --cflags opencv` # -std=c++11 -DUSE_OLD_FFMPEG
 LDFLAGS = `pkg-config --libs opencv`
 
 # objects to compile
