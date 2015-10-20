@@ -6,10 +6,10 @@ You can solve it by:
 + compiling defining the 'USE_OLD_FFMPEG'
 + add this code to your `VideoIO` objects:
 
-	// Create a MyVideoIO instance of VideoIO class
+	// Create a MyVideoIO instance of VideoIO class  
 	VideoIO MyVideoIO;
 	
-	// Remove call to the -hide_banner option
+	// Remove call to the -hide_banner option  
 	MyVideoIO.ShowInfos |= SHOW_BANNER;
 
 Our code was tested with version 2.4.7.
