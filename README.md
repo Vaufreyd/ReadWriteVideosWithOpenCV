@@ -38,7 +38,7 @@ was tested with OpenCV 2.4.10 (Linux/Windows/Mac OSX) and 3.0.0 (on Windows only
 For older version, please read KnownIssues.md.
 In a command shell (even in the standard cmd.exe shell on Windows), you can test `ffprobe` and `ffmpeg` to see if it is working.
 
-    $> ffprobe --version
+    $> ffprobe --version 
     $> ffmpeg --version
 
 On Linux and Mac OSX, if this test is working, you can go ahead. On Windows, you must install Visual Studio 2013 (Express, for the free
