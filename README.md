@@ -1,4 +1,4 @@
-# Read Write Movies With OpenCV
+# Read Write Videos With OpenCV
 
 This aim of this project is to provide a convenient way to read and write almost any kind of video
 with [OpenCV](http://opencv.org/). The idea is to use [ffmpeg](https://www.ffmpeg.org/) as a pipe tool to read and write videos (sound is not supported)
