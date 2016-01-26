@@ -9,7 +9,7 @@ our Swiss knife to facilitate video manipulation as you may have encounter probl
 
 Using this code you will be able, even under Windows (the poor sibling of [OpenCV](http://opencv.org/) on this task),
 to read and to generate various types of videos :
-+ We encoutered problems when reading some videos with OpenCV alone, this code solve them 
++ We encoutered problems when reading some videos with OpenCV alone, this code solve them. For instance, you may have troubles to create videos from small images (like 100x100).
 + While OpenCV let you define size and frame rate of the video, here, you can precisely define all kind of parameters for reading or writing videos: codecs, quality, bandwith, size, pixel format, etc.
 + You can do the same with your webcam as input (see Webcam.md)
 
