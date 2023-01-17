@@ -106,4 +106,4 @@ If you are a researcher and this software helps you, please cite our publication
 13th International Conference on Control, Automation, Robotics and Vision, Dec 2014, Singapore, 2014. [(go to author version)](https://hal.inria.fr/hal-01095667)
 
 Copyright (c) 2015, University of Grenoble Alpes and Inria, All rights reserved.
-Dominique Vaufreydaz <Dominique.Vaufreydaz@inria.fr> 
+Dominique Vaufreydaz <Dominique.Vaufreydaz@univ-grenoble-alpes.fr> 
